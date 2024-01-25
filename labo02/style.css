@@ -1,0 +1,131 @@
+*, *::before, *::after{
+    box-sizing: border-box;
+}
+
+html{
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+body{
+    background-color: #fffdff;
+    line-height: 1.6;
+    margin: 0;
+}
+
+.container{
+    max-width: 80rem;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+
+
+
+/* header */
+
+header{
+    background-color: #00002e;
+    color: #fffdff;
+}
+nav ul{
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+nav a{
+    display: inline-block;
+    padding: 1rem 2rem;
+    color: inherit;
+    text-decoration: none;
+    margin-left: -2rem;
+}
+
+/* oef 1 */
+
+.row{
+    display: flex;
+    gap: 2rem;
+
+}
+.row div{
+    border-style: dashed;
+    border-color: #00002e;
+    border-width: 1px;
+    padding: 1rem;
+    flex-grow: 1;
+}
+
+
+/* oef 2 */
+
+.navPortfolio{
+    display: flex;
+}
+
+.portfolionaam{
+    flex-grow: 1;
+    display: flex;
+}
+
+.navPortfolio a{
+    align-self: center;
+    padding: 1rem 2rem;
+    color: inherit;
+    text-decoration: none;
+    margin-left: -2rem;
+}
+.navPortfolio ul a{
+    margin-left: 0;
+    color: #fffdff;
+    background-color: #9e1f14;
+}
+.navPortfolio a:hover, .navPortfolio a:focus-visible{
+    background-color: #fffdff;
+    color: #9e1f14;
+}
+
+/* oef 3 */
+
+.cards{
+    display: flex;
+
+    flex-direction: row;
+    padding: 0;
+    margin: 0;
+    gap: 1rem;
+    list-style: none;
+    flex-grow: 1;
+}
+.cards li {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    -webkit-box-shadow: 0 0 10px #9b9b9b;
+}
+.cards li > img{
+    order: -1;
+    width: 100%;
+    height: auto;
+}
+.cards .overlay-link{
+    position: absolute;
+    top: 0;
+    left: 0;
+     right: 0;
+    bottom: 0;
+    text-indent: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    z-index: 0;
+
+}
+.cards a:not(.overlay-link){
+    position: relative;
+    z-index: 1;
+}
+.cards .content{
+    margin-left: 1rem;
+}

@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://unpkg.com/@csstools/normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,500;0,800;1,300;1,500;1,800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="
+https://cdn.jsdelivr.net/npm/baguettebox.js@1.11.1/dist/baguetteBox.min.css
+" rel="stylesheet">
+
+
+
+    <title>Sander Bockstaele</title>
+</head>
+<body>
+<header class="pb-3 mb-4">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                <a class="navbar-brand" href="#">Sander Bockstaele</a>
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">contact</a>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+
+
+
+
+
+</header>
+<main class="container">
+    <article>
+        <section id="carousel">
+            <div id="carouselExampleAutoplaying" class="container carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="img/shrek1.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h1>Sander Bockstaele</h1>
+                            <p>Toekomstige developer</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/shrek2.jpeg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/shrek3.jpeg" class="d-block w-100" alt="...">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </section>
+
+        <section id="jumbotron">
+            <div class="p-5 mb-4 bg-body-tertiary rounded-3">
+                <div class="container-fluid py-5">
+                    <h2 class="display-5 fw-bold">Huur hem nu in</h2>
+                    <p class="col-md-8 fs-4">Met behulp van Sander kan u nu uw eigen prachtige website laten maken!</p>
+                    <a href="https://sanderbockstaele.ikdoeict.be/contact" target="_blank" class="btn btn-primary btn-lg" type="button">Contacteer Sander</a>
+                </div>
+            </div>
+        </section>
+
+
+        <section>
+            <h2>Sander z'n 3 favoriete dingen</h2>
+            <div class="row">
+                <div class="col-sm-6 col-lg-4">
+                    <div class="card">
+                        <img src="img/fav1.webp" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-text">Sander z'n huis</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-lg-4">
+                    <div class="card">
+                        <img src="img/fav2.jpeg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-text">Sander z'n vriendin</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4">
+                    <div class="card">
+                        <img src="img/fav3.jpeg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-text">Sander z'n beste vriend</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+
+
+        <section id="projecten">
+            <h2>Hier zijn een aantal projecten van sander</h2>
+            <div class="gallery flex-row">
+                <a href="img/labo1.png " >
+                    <img class="img-thumbnail" width="30%" src="img/labo1.png" alt="First image">
+                </a>
+                <a href="img/labo2.png">
+                    <img class="img-thumbnail" width="40%" src="img/labo2.png" alt="Second image">
+                </a>
+
+            </div>
+        </section>
+
+
+        <section class="mb-5">
+            <h2>Vul dit in om contact op te nemen met de schrijver van dit article (niet Sander)</h2>
+            <form action="./" id="contact">
+                <div class="input-group mb-3">
+                    <span class="input-group-text" id="naam">naam</span>
+                    <input type="text" class="form-control" aria-label="naam" aria-describedby="naam">
+                </div>
+
+                <div class="input-group mb-3">
+                    <span class="input-group-text" id="email">email</span>
+                    <input type="text" class="form-control" aria-label="email" aria-describedby="email">
+                </div>
+
+                <div class="input-group mb-3">
+                    <span class="input-group-text" id="boodschap">boodschap</span>
+                    <textarea type="text" class="form-control" aria-label="boodschap" aria-describedby="boodschap"></textarea>
+                </div>
+                <input type="submit" value="submit" class="btn btn-dark">
+            </form>
+        </section>
+    </article>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</main>
+<footer>
+
+</footer>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/baguettebox.js@1.11.1/dist/baguetteBox.min.js"></script>
+<script>
+        baguetteBox.run('.gallery');
+</script>
+
+</body>
+</html>

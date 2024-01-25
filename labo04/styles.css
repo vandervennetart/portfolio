@@ -1,0 +1,149 @@
+*, *::before, *::after{
+	box-sizing: border-box;
+	z-index: 1;
+}
+
+html{
+	font-family: 'Montserrat', sans-serif;
+	color: #151515;
+
+}
+
+body{
+	background-color: #f3f3f3;
+	line-height: 1.6;
+	margin: 0;
+	position: relative;
+}
+
+.container{
+	max-width: 80rem;
+	margin: 0 auto;
+	padding: 0 1rem;
+}
+
+header{
+	position: sticky;
+	top: 0;
+	color: #f3f3f3;
+	background-color: #262626;
+	opacity: 0.8;
+	z-index: 100;
+}
+
+nav ul{
+	display: flex;
+	flex-direction: row;
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+
+nav a{
+	display: inline-block;
+	padding: 1rem 2rem;
+	color: inherit;
+	text-decoration: none;
+	text-align: center;
+}
+
+nav li:first-child a{
+	margin-left: -2rem;
+}
+
+header nav a:hover, .navPortfolio a:focus-visible{
+	background-color: #fffdff;
+	color: #9e1f14;
+}
+
+
+
+
+/* form-fields */
+/* zie demo bestanden bij de theorie voor meer CSS ;) */
+.contact {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	gap: 5rem;
+}
+
+h1{
+	margin-bottom: 0rem;
+}
+
+.contact > ul{
+	margin: 0 2rem;
+	order: 1;
+	list-style: none;
+	flex-grow: 1;
+}
+
+.contact > form{
+	flex-grow: 2;
+}
+
+
+input:not([type=submit]),
+textarea {
+	display: block;
+	width: 100%;
+	max-width: 35rem;
+	padding: .75em;
+	border: 1px solid #666;
+	border-radius: .3rem;
+}
+
+label,
+input[type=submit] {
+	margin-top: 1.5rem;
+}
+input[type=submit] {
+	padding: .5em 2em;
+}
+label {
+	display: block;
+	margin-bottom: .2em;
+	font-weight: bold;
+}
+
+
+
+.message.error {
+	color: #b90e0a;
+	font-size: small;
+}
+
+
+
+
+.submit {
+	background-color: #262626;
+	border-radius: 4px;
+	border-style: none;
+	box-sizing: border-box;
+	color: #fff;
+	cursor: pointer;
+	display: inline-block;
+	font-family: "Farfetch Basis","Helvetica Neue",Arial,sans-serif;
+	font-size: large;
+	font-weight: 700;
+	line-height: 1.5;
+	margin: 0;
+	height: 3rem;
+	overflow: hidden;
+	padding: 9px 20px 8px;
+	position: relative;
+	text-align: center;
+	touch-action: manipulation;
+	width: 100%;
+}
+
+.submit:hover,
+.submit:focus {
+	opacity: .75;
+}
+
+.kaart{
+	max-width: 18rem;
+}

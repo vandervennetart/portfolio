@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://unpkg.com/@csstools/normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,500;0,800;1,300;1,500;1,800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Labo 02</title>
+</head>
+<body>
+<header>
+    <div class="container">
+        <nav>
+            <ul>
+                <li><a href="#introductieoefening">Introductieoefening</a></li>
+                <li><a href="#columns">Columns</a></li>
+                <li><a href="#nav">Nav</a></li>
+                <li><a href="#cards">Cards</a></li>
+            </ul>
+        </nav>
+    </div>
+
+</header>
+
+<main>
+    <article class="container">
+        <h1>Labo 02</h1>
+
+        <section id="introductieoefening">
+            <h2>Introductieoefening</h2>
+
+                <h3>Stap 1</h3>
+                <ol>
+                    <li><p>Maak een nieuw project.<br>Zorg voor een index.html en style.css</p></li>
+                    <li><p>Schrijf alle html</p></li>
+                </ol>
+
+
+                <h3>Stap 2</h3>
+                <ol>
+                    <li><p>Voeg normalize.css toe via een link in de head<br>rel="stylesheet", href="https://unpkg.com/@csstools/normalize.css"</p></li>
+                    <li><p>voeg een font toe in de head <a href="https://fonts.google.com/share?selection.family=Montserrat:ital,wght@0,300;0,500;0,800;1,300;1,500;1,800">montserrat 300, 500 & 800; normaal en italic</a></p></li>
+                    <li><p>koppel je eigen style.css aan je HTML</p></li>
+                </ol>
+
+                <h3>Stap 3: css</h3>
+                <ol>
+                    <li><p>'corigeer' de box-sizing van alle elementen en van alle ::before en ::after pseudo-elementen.
+                        <br>Zie theorie!</p></li>
+                    <li><p>maak een <em>body</em> selector en pas de background color aan naar #fffdff,<br>pas de font-familie aan naar Montserrat en vergeet je fallback font niet!<br>Zet de line-height op 1.6 en de margin op 0</p></li>
+                </ol>
+
+                <h3>Stap 4: vragen</h3>
+                    <ol>
+                        <li><p>Wat doet normalize.css?<br>Zorgt ervoor dat de webpagina op alle browsers hetzelfde er uit ziet.</p></li>
+                        <li><p>Wat is een fallback font, wat doet het, welk heb je gekozen en waarom?<br>Moest de server van google waar ik montserrat vandaan haal niet werken zal ik sans-serif gebruiken omdat het mooi is en een goede 2de keuze.</p></li>
+                        <li><p>Waar had je bij deze oefening moeite mee?<br>De oefening lukte redelijk goed, alleen is het soms wat moeilijk om te weten wat er bedoeld wordt met bepaalde vragen en wanneer ik wat moet gebruiken (bv: section of div...).</p></li>
+                    </ol>
+
+        </section>
+
+        <section id="columns">
+            <h2>Oefening 1: Columns</h2>
+            <div class="row">
+                <div></div>
+                <div></div>
+            </div>
+            
+        </section>
+
+        <section id="nav">
+            <h2>Oefening 2: Nav</h2>
+            <div class="navPortfolio">
+                <div class="portfolionaam" >
+                    <a href="../">Portfolio van Art</a>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="../">home</a></li>
+                        <li><a href="../cv">Over mij</a></li>
+                        <li><a href="../blogpagina">Blog</a></li>
+                        <li><a href="../contactpagina">Contacteer</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+        </section>
+
+        <section id="cards">
+            <h2>Oefening 3: Cards</h2>
+            <ul class="cards">
+                <li>
+                    <div class="content">
+                        <h3>Card title 1</h3>
+                        <p>Card text Lorem ipsum dolor sit amet.</p>
+                        <a href="#">Read more about title 1</a>
+                        <a href="#" class="overlay-link">Read more about title 1</a>
+                    </div>
+                    <img src="https://picsum.photos/350/150?1" alt="">
+                </li>
+
+                <li>
+                    <div class="content">
+                        <h3>Card title 2</h3>
+                        <p>Card text Lorem ipsum dolor sit amet.</p>
+                        <a href="#">Read more about title 2</a>
+                        <a href="#" class="overlay-link">Read more about title 2</a>
+                    </div>
+                    <img src="https://picsum.photos/350/150?2" alt="">
+                </li>
+                <li>
+                    <div class="content">
+                        <h3>Card title 3</h3>
+                        <p>Card text Lorem ipsum dolor sit amet.</p>
+                        <a href="#">Read more about title 3</a>
+                        <a href="#" class="overlay-link">Read more about title 3</a>
+                    </div>
+                    <img src="https://picsum.photos/350/150?3" alt="">
+                </li>
+                <li>
+                    <div class="content">
+                        <h3>Card title 4</h3>
+                        <p>Card text Lorem ipsum dolor sit amet.</p>
+                        <a href="#">Read more about title 4</a>
+                        <a href="#" class="overlay-link">Read more about title 4</a>
+                    </div>
+                    <img src="https://picsum.photos/350/150?4   " alt="">
+                </li>
+            </ul>
+        </section>
+    </article>
+</main>
+
+<footer>
+    <div class="container">
+        <p>&copy; 2023</p>
+    </div>
+
+</footer>
+
+</body>
+</html>

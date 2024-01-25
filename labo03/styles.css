@@ -1,0 +1,290 @@
+/********************* Colour reference chart****************
+*************************** comment ********* colour ********
+
+background colour           bg              #fffdff
+text colour                 t               #151515FF
+selected colour             s               #F3F3F3FF
+
+*/
+
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    background-color: #fffdff;
+    color: #151515FF ;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    line-height: 1.6;
+}
+ol li {
+    margin-bottom: 1rem;
+}
+section > h2 {
+    margin-top: 4rem;
+}
+.backtotop {
+    font-size: 0.8rem;
+}
+/* HELPERS */
+.container {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+
+
+/* --- OEFENING 1 --- */
+article.typografie {
+    font-family: 'Source Serif 4', serif;
+
+    border-style: solid;
+    padding: 1rem;
+
+    max-width: 42.5rem;
+    font-size: 1.25rem;
+
+    line-height: 1.6;
+    color: #242424;
+    margin: 0 auto;
+}
+
+article.typografie p{
+    margin-bottom: 1.5em ;
+}
+
+
+article.typografie h2{
+    font-size: 1.875em;
+    margin-top: 1.5em;
+
+}
+
+article.typografie h1{
+    font-size: 2.8125em;
+    margin-top: 0;
+}
+article.typografie h1, article.typografie h2{
+    font-weight: 800;
+}
+article.typografie p:last-child{
+    font-style: italic;
+}
+
+
+
+
+/* --- OEFENING 2 --- */
+
+
+.mylink a{
+
+    color: #c22b1c;
+    align-self: center;
+}
+.mylink a:hover, .mylink a:focus-visible{
+    text-decoration: none;
+}
+.mylink a::before{
+    position: relative;
+    content: url("images/deleteicon.png");
+    top: 3px;
+}
+
+
+.mybutton a{
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5em;
+    background-color: #C22B1CFF;
+
+    padding: 0.65rem 0.85rem;
+
+    color: #fffdff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: gap 0.3s ease-in-out;
+}
+
+.mybutton a:hover, .mybutton a:focus-visible{
+    gap: 1em;
+    background-color: #ca3b2d;
+}
+
+
+/* --- OEFENING 3 --- */
+article.shoe {
+    /* Zorg dat deze gecentreerd zal worden en een maximum breedte van 30rem */
+    /* Stel het lettertype "open sans" in (google font) */
+    /* De afgronde hoeken zet je in met border radius, de schaduw met box-shadow */
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    max-width: 30rem;
+    font-family: 'Open Sans', sans-serif;
+    border-radius: 5px;
+    -webkit-box-shadow: 0 0 10px #9b9b9b;
+    padding: 1rem;
+
+}
+
+
+/* Breadcrumb & update */
+/* Plaats de breadcrumb (men - shoes) en new color naast elkaar met flex. 
+Doe de nodige instellingen inzake typografie */
+article.shoe div:first-child{
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.7em;
+
+}
+article.shoe .breadcrumb {
+    display: inline-flex;
+    gap: 1rem;
+    margin-top: 0;
+}
+
+article.shoe .breadcrumb a{
+    color: #151515FF;
+}
+
+article.shoe .update{
+    margin-top: 0;
+    color: #a36700;
+}
+
+
+/* Title & prices */
+/* De titel en de prijs ga je ook naast elkaar plaatsen met flexbox
+de prijs en de vat kan je onder elkaar plaatsen met flex-direction: column 
+Doe de nodige instellingen inzake typografie */
+article.shoe div:nth-child(2){
+    display: flex;
+    justify-content: space-between;
+}
+
+article.shoe div:nth-child(2) h1{
+    font-weight: 700;
+
+}
+
+article.shoe div:nth-child(2) p{
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-end;
+
+}
+
+article.shoe div:nth-child(2) .price{
+    font-size: 1.5em;
+}
+article.shoe div:nth-child(2) .price  span{
+    font-size: .5em;
+}
+
+
+/* Description */
+/* selecteer de paragraaf in het article, deze heeft weinig instelling buiten wat marges en een maximum breedte */
+
+article.shoe > p{
+    font-weight: 300;
+    max-width: 21rem;
+    margin-bottom: 2.5rem;
+    margin-top: 0;
+
+}
+
+
+/* Colors */
+/* Maak de paragraaf met de kleurnaam correct op.
+ Zet de foto's naast elkaar met flex en voorzie ruimte met gap
+ Geef de list items een achtergrond kleur. Aangezien de foto's transparant zijn zie je die 
+ als achtergrond bij de foto's.
+ Stel een border in op de geselecteerde foto/kleur */
+
+article.shoe .colors p{
+    font-weight: bold;
+}
+
+article.shoe .colors ul{
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+    padding: 0;
+
+}
+
+article.shoe .colors li{
+    display: flex;
+    align-items: center;
+
+}
+
+article.shoe .colors li a{
+    display: flex;
+    justify-content: center;
+    background-color: #f3f3f3;
+    height: 6rem;
+    width: 6rem;
+}
+
+
+article.shoe .colors li a:hover, article.shoe .colors li a:focus-visible{
+    outline-style: solid;
+    outline-color:#151515FF;
+    background-color: #fffdff;
+}
+
+/* Sizes */
+/* Gebruik terug Flexbox om de sizes naast elkaar te plaatsen.
+gebruik "wrap" om het grid effect te krijgen.
+Via paddings kan je de knoppen groter maken. */
+/* de lector zal ook de hover functie van dit onderdeel tonen in het labo */
+
+article.shoe .sizes p{
+    font-weight: bold;
+}
+article.shoe .sizes ul{
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    gap: .5rem;
+    padding: 0;
+}
+
+article.shoe .sizes li a{
+
+    background-color: #f3f3f3;
+    width: 5rem;
+    height: 3rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+article.shoe .sizes li a{
+    text-decoration: none;
+    color: #151515FF;
+    font-weight: bold;
+}
+article.shoe .sizes a:hover, article.shoe .sizes a:focus-visible{
+    outline-style: solid;
+    outline-color:#151515FF;
+    background-color: #fffdff;
+}
+/* button */
+/* Om af te ronden, voorzie de opmaak van de button */
+article.shoe .addToCart{
+    background-color: #151515FF;
+    font-weight: 700;
+    font-size: large;
+    color: #fffdff;
+    border-radius: 2rem;
+    justify-self: center;
+    height: 3.5rem;
+    margin-bottom: .5rem;
+}

@@ -1,0 +1,11 @@
+.general{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    flex-direction: row;
+}
+
+.general img{
+    max-width: 10rem;
+    max-height: 20rem;
+}

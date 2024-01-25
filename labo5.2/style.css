@@ -1,0 +1,292 @@
+:root {
+    --bg:  #F4F6F6;
+    --color: #0000A3;
+    --accent: #FFEA00;
+
+
+}
+
+
+*, *::before, *::after{
+    box-sizing: border-box;
+}
+
+html{
+    font-family: 'Kanit', sans-serif;
+    color: var(--color);
+}
+
+body{
+    background-color: var(--bg);
+    line-height: 1.6;
+    margin: 0;
+}
+
+.container{
+    max-width: 80rem;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+section{
+    margin: 2rem auto;
+}
+
+img{
+    aspect-ratio: 8/5;
+    width: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+/* header */
+nav ul{
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+nav a{
+    display: inline-block;
+    padding: 1rem 2rem;
+    color: inherit;
+    text-decoration: none;
+    margin-left: -2rem;
+}
+
+
+
+.nav{
+    display: flex;
+
+}
+
+.titel{
+    flex-grow: 1;
+    display: flex;
+    font-weight: bold;
+    font-size: x-large;
+    align-content: center;
+}
+
+.nav a{
+    align-self: center;
+    padding: 1rem 2rem;
+    color: inherit;
+    text-decoration: none;
+    margin-left: -2rem;
+
+}
+
+
+
+
+.nav ul a{
+    margin-left: 0;
+    color: var(--bg);
+    background-color: var(--color);
+    position: relative;
+}
+
+nav a::after{
+    display: inline-block;
+    content: '';
+    background-color: var(--color);
+    border: 5px solid var(--bg);
+    border-radius: 50%;
+    width: 1.5rem;
+    height: 1.5rem;
+    bottom: -2.25rem;
+    right: calc(50% - 0.25rem);
+    position: relative;
+    scale: 0;
+    transition: scale 0.2s ease-in-out;
+}
+
+nav a.active::after, nav a:hover::after, nav a:focus-visible::after{
+    scale: 1;
+}
+
+
+/*home*/
+
+.home{
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.home img{
+    padding-right: 12rem;
+}
+
+h1{
+    font-size: 8rem;
+    font-variant: all-petite-caps;
+    font-weight: bold;
+    line-height: .8;
+    margin: 0;
+
+    position: absolute;
+    max-width: 25rem;
+
+    text-shadow: -0.3rem -0.3rem var(--accent), 0.3rem 0.3rem var(--bg) ;
+
+    animation-name: shakeMe;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes shakeMe {
+    0%, 10%{
+        text-shadow: -0.3rem -0.3rem var(--accent), 0.3rem 0.3rem var(--bg) ;;
+    }
+    1%,9%{
+        text-shadow: -0.2rem -0.2rem var(--accent), 0.2rem 0.2rem var(--bg) ;
+    }
+    2%,8%{
+        text-shadow: -0.1rem -0.3rem var(--accent), 0.3rem 0.3rem var(--bg) ;
+    }
+
+    5%{
+        text-shadow: 0 0 var(--accent), 0 0 var(--bg) ;
+    }
+}
+
+
+.information{
+    margin: 6rem auto;
+    display: flex;
+    gap: 2rem;
+}
+
+.information > *{
+    width: 100%;
+}
+
+.information div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    padding: 1rem;
+    outline-style: solid;
+    outline-color: var(--color);
+    outline-width: 0.5rem;
+}
+
+.information div a, .information>p:nth-child(2){
+    color: inherit;
+    font-weight: bold;
+}
+
+
+
+
+/*teaser*/
+.teaser{
+    margin: 8rem auto;
+    padding: 8rem 0;
+}
+
+footer::before, .teaser::before, .teaser::after{
+    content: '';
+    display: block;
+    background-color: var(--color);
+    height: 0.2rem;
+    width: 50%;
+    margin: 0 auto;
+    position: relative;
+}
+
+.teaser::before{
+    position: relative;
+    top: -8rem;
+}
+
+.teaser::after{
+    bottom: -8rem;
+}
+
+
+.teaser > *{
+    display: flex;
+    text-align: right;
+    gap: 2rem;
+}
+
+.teaser > * > *{
+    flex: 0 1 30rem;
+}
+
+.teaser > *:nth-child(even){
+    flex-direction: row-reverse;
+    text-align: left;
+}
+figure{
+    outline-width: 0.2rem;
+    outline-color: var(--color);
+    outline-style: solid;
+    position: relative;
+}
+figure::before{
+    content: '';
+    display: block;
+    background-color: var(--accent);
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: -1rem;
+    right: -1rem;
+    z-index: -1;
+    outline-width: 0.2rem;
+    outline-color: var(--color);
+    outline-style: solid;
+}
+
+/*form*/
+label,
+input[type=submit] {
+    margin-top: 1.5rem;
+}
+
+input:not(input[type=submit]){
+    width: 50%;
+    height: 2rem;
+    border-color: var(--color);
+    border-style: solid;
+}
+
+input[type=submit] {
+    padding: .5em 2em;
+}
+label {
+    display: block;
+    margin-bottom: .2em;
+    font-size: small;
+    font-weight: bold;
+}
+.submit {
+    border-style: solid;
+    border-width: 0.2rem;
+    border-color: var(--color);
+    color: var(--color);
+    background-color: var(--bg);
+
+    position: relative;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 8rem;
+
+}
+
+.submit:hover,
+.submit:focus {
+    opacity: .75;
+}
+
+footer::before{
+    width: 100%;
+}

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="62d3d750-efd4-4f52-90f6-ed72860feb0f" name="Changes" comment="8/12" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/style.css" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="PhpDebugGeneral" listening_started="true" />
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 6
+}</component>
+  <component name="ProjectId" id="2Z4eOpjLYndXWi5bxT7QDoUj3hr" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "DefaultHtmlFileTemplate": "HTML File",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
+    "last_opened_file_path": "C:/school/web_introduction/les2/introduction",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "reference.settingsdialog.project.grazie",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\school\web_introduction\les2\labo 02" />
+    </key>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-php-predefined-ba97393d7c68-74080bdb84d3-com.jetbrains.php.sharedIndexes-PS-233.11799.232" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="62d3d750-efd4-4f52-90f6-ed72860feb0f" name="Changes" comment="" />
+      <created>1701685749661</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1701685749661</updated>
+      <workItem from="1701685750660" duration="2000" />
+      <workItem from="1701692108867" duration="1798000" />
+      <workItem from="1701694913628" duration="1000" />
+      <workItem from="1701694943014" duration="3277000" />
+      <workItem from="1701704401954" duration="16703000" />
+      <workItem from="1701945668058" duration="215000" />
+      <workItem from="1702036108947" duration="1225000" />
+      <workItem from="1702058299519" duration="13000" />
+      <workItem from="1702059622695" duration="14000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="8/12" />
+    <option name="LAST_COMMIT_MESSAGE" value="8/12" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>
