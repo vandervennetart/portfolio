@@ -408,9 +408,15 @@ label:not(.check) {
     list-style: none;
     display: flex;
     flex-direction: row;
+    gap: 1rem;
 }
 
 .fotolijst li{
-    max-width: 5rem;
+    max-width: 20rem;
+    
+}
+
+.fotolijst li img{
     height: auto;
+    width: 100%;
 }
