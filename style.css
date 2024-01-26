@@ -374,6 +374,10 @@ label:not(.check) {
     align-items: center;
 }
 
+.blogtext{
+    padding: 0 1rem;
+}
+
 .blogPost::before {
     position: absolute;
     top: 0;

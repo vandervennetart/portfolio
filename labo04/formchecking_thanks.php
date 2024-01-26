@@ -24,7 +24,7 @@
             <ul>
                 <li><a href="./">home</a></li>
                 <li><a href="./cv">cv</a></li>
-                <li><a href="./projects">projects</a></li>
+                <li><a href="./projecten">projecten</a></li>
                 <li><a href="./blogpagina">blogpagina</a></li>
                 <li><a href="./contactpagina">contactpagia</a></li>
             </ul>
