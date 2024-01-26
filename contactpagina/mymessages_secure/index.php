@@ -41,7 +41,7 @@ $items = $stmt->fetchAll(PDO::FETCH_ASSOC);
     <title>Mijn berichten</title>
 </head>
 
-<body class="container">
+<body>
     <header>
         <div class="container">
             <div class="titel">
@@ -58,15 +58,32 @@ $items = $stmt->fetchAll(PDO::FETCH_ASSOC);
             </nav>
         </div>
     </header>
-    <?php if (sizeof($items) > 0) { ?>
-        <ul>
-            <?php foreach ($items as $item) { ?>
-                <li><?php echo htmlentities($item['sender']); ?>: <?php echo htmlentities($item['message']); ?>; <?php echo htmlentities($item['known_from']) ?> (<?php echo (new Datetime($item['added_on']))->format('d-m-Y H:i:s'); ?>)</li>
-            <?php } ?>
-        </ul>
-    <?php
-    } else {
-        echo '<p>Nog geen berichten ontvangen.</p>' . PHP_EOL;
-    }
-    ?>
+
+    <main class="container">
+        <?php if (sizeof($items) > 0) { ?>
+            <ul>
+                <?php foreach ($items as $item) { ?>
+                    <li><?php echo htmlentities($item['sender']); ?>: <?php echo htmlentities($item['message']); ?>; <?php echo htmlentities($item['known_from']) ?> (<?php echo (new Datetime($item['added_on']))->format('d-m-Y H:i:s'); ?>)</li>
+                <?php } ?>
+            </ul>
+        <?php
+            } else {
+                echo '<p>Nog geen berichten ontvangen.</p>' . PHP_EOL;
+            }
+        ?>
+    </main>
+
+    <footer class="container">
+        <section>
+            <p>
+                &copy;2023 Art Van der Vennet -
+                <a rel="noopener" href="https://www.linkedin.com/in/art-van-der-vennet-8a9944267" target="_blank">linkedin</a>
+                - Hoeksken 74, 9940 Evergem
+            </p>
+        </section>
+    </footer>
+
+
+
+
 </body>
