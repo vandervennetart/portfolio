@@ -6,7 +6,7 @@
     --bg-hover: rgb(26, 26, 36);
     --color: rgb(38, 38, 38);
     --accent: #355bf7;
-    --accent2: rgb(53 91 247/ 0.6);
+    --accent2: rgba(12, 46, 178, 0.7);
     --accent3: rgb(168, 216, 255);
     --color-inverse: #f8f8f8;
     --error: #b90e0a;
@@ -75,7 +75,7 @@ footer {
 }
 
 main {
-    min-height: 100vh;
+    min-height: 67vh;
 }
 
 /* header */
