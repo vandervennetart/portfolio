@@ -41,7 +41,7 @@ $items = $stmt->fetchAll(PDO::FETCH_ASSOC);
     <title>Mijn berichten</title>
 </head>
 
-<body>
+<body class="container">
     <header>
         <div class="container">
             <div class="titel">
