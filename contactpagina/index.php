@@ -114,7 +114,7 @@ if (isset($_POST['btnSubmit'])) {
                 <li>
                     <h2>Adres</h2>
                     <p>Hoeksken 74, 9940 Evergem, België</p>
-                    <iframe class="kaart" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2504.8569638864433!2d3.7013054760208397!3d51.111099171725975!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c37085fd32190f%3A0x3b60d198878014e6!2sHoeksken%2074%2C%209940%20Evergem!5e0!3m2!1snl!2sbe!4v1702914016861!5m2!1snl!2sbe" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <iframe name="adres-kaart" class="kaart" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2504.8569638864433!2d3.7013054760208397!3d51.111099171725975!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c37085fd32190f%3A0x3b60d198878014e6!2sHoeksken%2074%2C%209940%20Evergem!5e0!3m2!1snl!2sbe!4v1702914016861!5m2!1snl!2sbe" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </li>
                 <li>
                     <h2>Telefoonnummer</h2>
