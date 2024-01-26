@@ -403,3 +403,14 @@ label:not(.check) {
     display: flex;
     flex-direction: column;
 }
+
+.fotolijst{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+}
+
+.fotolijst li{
+    max-width: 5rem;
+    height: auto;
+}
