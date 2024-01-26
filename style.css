@@ -195,7 +195,7 @@ header nav a:focus-visible::before {
     margin: 0;
     gap: 1rem;
     list-style: none;
-    flex-grow: 1;
+    
 }
 
 .grid {
@@ -203,6 +203,7 @@ header nav a:focus-visible::before {
 }
 
 .cards li {
+    width: 100%;
     display: flex;
     position: relative;
     flex-direction: column;
@@ -210,10 +211,20 @@ header nav a:focus-visible::before {
     box-shadow: 0 0 2px #9b9b9b;
 }
 
-.cards li > img {
+.cards li > figure {
+    margin: 0;
     order: -1;
     width: 100%;
-    height: auto;
+    height: 10rem;
+    display: flex;
+    padding: 1rem;
+    
+    align-items: center;
+    justify-content: center;
+}
+figure img{
+    height: 100%;
+    width: auto;
 }
 .overlay-link {
     position: absolute;
@@ -380,4 +391,10 @@ label:not(.check) {
 .detail {
     font-size: smaller;
     font-weight: lighter;
+}
+
+
+.bekijk_meer{
+    display: flex;
+    flex-direction: column;
 }
