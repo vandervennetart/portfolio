@@ -181,7 +181,7 @@ header nav a:focus-visible::before {
 
 .style-home .background-img {
     flex-grow: 1;
-    max-width: 20rem;
+    
     height: 30rem;
 }
 
